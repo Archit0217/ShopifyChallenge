@@ -1,0 +1,78 @@
+body {
+	background-color: #000639;
+	margin: 0 300px 0 300px;
+}
+
+h1 {
+	color: white;
+	font-family: Helvetica;
+	padding-bottom: 15px;
+}
+
+#garbage {
+	width: 5%;
+	border-top: 10px solid #7ab55c;
+	border-width: 3px;
+}
+
+h3 {
+	font-size: 25px;
+	color: white;
+	width: 100%;
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+
+#example-email-input {
+	width: 400px;
+	margin-right: 45px;
+	margin-left: 18px;
+	margin-bottom: 0;
+	margin-top: 0;
+	height: 55px;
+	font-size: 16px;
+	letter-spacing: 3.5px;
+	padding-top: 5px;
+}
+
+#mydp {
+	width: 328px;
+	height: 55px;
+	background-color: white;
+	letter-spacing: 3.5px;
+	font-size: 16px;
+	margin-top: 0px;
+	color: #7b7b7b;
+	text-align: left;
+	padding-left: 25px;
+}
+
+#unsubscribe {
+	color: #cecece;
+}
+
+input[type=submit] {
+	width: 100%;
+	background-color: #5c6ac4;
+	height: 60px;
+	font-size: 20px;
+	color: white;
+	border: 0;
+	text-align: center;
+}
+
+#error_msg{
+font-size:1em;
+}
+
+@media only screen and (max-width: 1200px) {
+	input[type="text"] {
+	    width: 200px;    
+	}
+}
+@media only screen and (max-width:900px){
+	.nwslttrfrm{
+		width:60%;
+	}
+}
+

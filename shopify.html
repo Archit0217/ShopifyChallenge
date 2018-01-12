@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopify Now</title>
+
+     <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="shopifycss.css">
+<!--           <script src="main.js"></script>
+ -->          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script> 
+    function ValidateEmail(email)   
+   {  
+      var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+      if(!email.value.match(mailformat))  
+      {    
+          if(document.getElementById("error_msg").style.display == 'none')
+               document.getElementById("error_msg").style.display = "block";
+      }
+      else
+         document.getElementById("error_msg").style.display = "none";
+   }
+</script>
+</head>
+
+
+<body>
+
+<br><br><br><br><br>
+<h1>Stay up to date with ecommerce trends <br> with Shopify's newsletter</h1>
+
+<p id="garbage"></p>
+
+<h3>Subscribe for free marketing tips</h3>
+
+
+<form name="subscribe_form" onsubmit="ValidateEmail(document.subscribe_form.email); return false">
+
+ <div class="form-group row" style="display: inline-block;">
+ 	<div class="col-10">
+ 		<input class="form-control" type="email" placeholder="Email Address" id="example-email-input" name="email">
+ 	</div>
+
+ </div>
+
+<!-- <div class="btn-group dropdown">
+    <button type="button" class="btn btn-info">Interested in...</button>
+    <button type="button" class="btn btn-info dropdown-toggle" id="mydp" data-toggle="dropdown" aria-haspopup="true" name="chosen" >
+        <span class="caret"></span>
+        <span class="sr-only">Split button!</span>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="#">Real Estate Tips</a></li>
+        <li><a href="#">Online Market Tips</a></li>
+        <li><a href="#">Advertising and Managing Tips</a></li>
+        <li><a href="#">Everything/Anything</a> </li>
+    </ul>
+</div> -->
+
+  <div class="dropdown" style="display: inline-block;">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="mydp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Interested In...
+  </button>
+  <ul class="dropdown-menu">
+        <li><a href="#">Real Estate Tips</a></li>
+        <li><a href="#">Online Market Tips</a></li>
+        <li><a href="#">Advertising and Managing Tips</a></li>
+        <li><a href="#">Everything/Anything</a> </li>
+    </ul>
+</div>
+
+ <p id="error_msg" style="display: none;color:#C23628">Please enter a valid email address</p> <br>
+
+     <input type="submit" class="btn btn-info" value="Sign Up Now" id="submitBtn">
+
+
+           
+<div style="position: relative">
+            <p style="position: fixed; bottom: 0; width:60%; text-align: center">
+            	<a href="#" id="unsubscribe"><u>Unsubscribe</u></a>
+            </p>
+        </div>
+
+</form>
+
+
+
+</body>
+</html>
