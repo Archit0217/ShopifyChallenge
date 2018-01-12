@@ -7,6 +7,6 @@ One without the error message and one with the error message.
 
 I really hope you can take a look at this.
 
-I enjoyed doind this challenge very much.
+I enjoyed doing this challenge very much.
 
 Thank you. 
